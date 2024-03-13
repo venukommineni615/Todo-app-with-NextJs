@@ -1,0 +1,16 @@
+.form{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.input{
+    padding: 0.5rem;
+    margin: 1rem;
+    border-radius: 1rem;
+}
+.button{
+    width: 4rem;
+    height: 2rem;
+  border-radius: 2rem;
+
+}

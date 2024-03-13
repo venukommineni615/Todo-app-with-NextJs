@@ -1,8 +1,28 @@
 .list{
-    width:'50%';
+    width:50%;
    
     margin: auto 2rem;
+    list-style: none;
+    
 }
 .item{
-    box-shadow: 2rem 2rem;
+    background-color:white;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    
+    border: 1px;
+    margin-bottom: 1rem;
+    border-color: #ffffff10;
+}
+.button, .icon{
+   border: none;
+   background-color: white;
+    font-size: larger;
+ 
+    cursor: pointer;
+    
+}
+.checkbox:checked{
+    color: black;
 }
