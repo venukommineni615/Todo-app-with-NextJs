@@ -1,5 +1,5 @@
 import Head from "next/head";
-
+import { MdAdd } from "react-icons/md";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 import Todos from "@/components/Todos";
@@ -20,8 +20,8 @@ export default function Home(props) {
       </Head>
       <main className={`${styles.main} ${inter.className}`}>
       <Todos todos={props.todos} show={() => setShow(prev => !prev)} />
-      {!show && <button onClick={()=>{setShow(true)}} className={`${styles.button}`}>Add todo</button>}
-      {show && <Form></Form>}
+      {!show && <button onClick={()=>{setShow(true)}} className={`${styles.button}`}><MdAdd />Add todo</button>}
+      {show && <Form show={() => setShow(prev => !prev)}></Form>}
       </main>
     </>
   );

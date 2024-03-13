@@ -30,8 +30,9 @@ const Form = (props) => {
   }
   return (
     <form onSubmit={addTodo} className={`${styles.form}`}>
-        <input ref={name} type='text' className={`${styles.input}`} required placeholder='work'></input>
-        <input ref={description} type='text' className={`${styles.input}`} required placeholder='description'></input>
+        <input ref={name} type='text' className={`${styles.input}`} required placeholder='Task name'></input>
+        <input ref={description} type='text' className={`${styles.input}`} required placeholder='Description'></input>
+        <button type='button' onClick={()=>{props.show()}} className={`${styles.cancelButton}`}>cancel</button>
         <button type='submit' className={`${styles.button}`}>Save</button>
     </form>
   )

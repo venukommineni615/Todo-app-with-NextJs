@@ -26,12 +26,20 @@
   gap: 0.5rem;
 }
 .button{
-  background-color:#14131370 ;
+  background-color:white ;
   padding: 0.5rem;
+  text-align: center;
   font-size: medium;
-  font-weight: 700;
-  color: white;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(0, 0, 0);
+  border: 1px solid rgb(96, 95, 95);
   border-radius: 2rem;
+}
+.button:hover{
+  box-shadow: 1px 1px 9px 1px rgb(97, 96, 96);
 }
 .description p {
   position: relative;

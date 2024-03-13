@@ -15,6 +15,9 @@
     margin-bottom: 1rem;
     border-color: #ffffff10;
 }
+.item:hover{
+    transform:scalex(110%)
+}
 .button, .icon{
    border: none;
    background-color: white;
