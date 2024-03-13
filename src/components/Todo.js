@@ -35,7 +35,7 @@ const Todo = (props) => {
     }
     const deleteTodo=async(event,id)=>{
       console.log('id',id,event)
-      const res=await fetch('http://localhost:3000/api/delete-todo',{
+     try{ const res=await fetch('http://localhost:3000/api/delete-todo',{
         method:'DELETE',
         body:JSON.stringify({id}),
         headers:{
@@ -43,7 +43,10 @@ const Todo = (props) => {
         }
         })
         const data=await res.json()
-        console.log('delete',data)
+        console.log('delete',data)}
+        catch(error){
+            console.log(error)
+        }
     }
   return (
     <li className={`${styles.item}`} key={todo.id}>
