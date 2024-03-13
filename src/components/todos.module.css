@@ -24,6 +24,7 @@
     font-size: larger;
  
     cursor: pointer;
+    margin-left: 1rem;
     
 }
 .checkbox:checked{
