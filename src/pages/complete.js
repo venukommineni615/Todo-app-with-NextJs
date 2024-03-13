@@ -27,7 +27,7 @@ export default function Home(props) {
 }
 
 export async function getServerSideProps() {
-    
+
   try {
     const res = await fetch('http://localhost:3000/api/get-todos'); 
     if (!res.ok) {
@@ -35,7 +35,7 @@ export async function getServerSideProps() {
     }
     const result = await res.json();
     const data=result.filter((todo)=>{
-        return todo.done===false
+        return todo.done===true
     })
     return {
       props: {
